@@ -1,0 +1,7 @@
+// "Solution Style"
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.dev.json" },
+  ]
+}

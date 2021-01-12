@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.dev.json",
+  "compilerOptions": {
+    "checkJs": false,
+    "declaration": false,
+    "composite": false,
+    "noEmit": false,
+    "outDir": "./dist",
+  },
+  "include": ["./src"],
+  "exclude": ["./src/**/*.test.ts"]
+}
