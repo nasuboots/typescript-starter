@@ -18,7 +18,6 @@ module.exports = /** @type {Config} */ ({
     'plugin:jest/style',
     'plugin:node/recommended',
     'prettier',
-    'prettier/@typescript-eslint',
   ],
   rules: {
     eqeqeq: ['error', 'always', { null: 'ignore' }],
