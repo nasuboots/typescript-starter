@@ -10,6 +10,8 @@ const { compilerOptions } = require('./tsconfig.dev.json')
 const config = {
   preset: 'ts-jest',
   testEnvironment: 'node',
+  roots: ['<rootDir>'],
+  modulePaths: ['<rootDir>'],
   globals: {
     'ts-jest': {
       tsconfig: path.resolve(__dirname, './tsconfig.dev.json'),
