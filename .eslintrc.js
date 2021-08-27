@@ -2,7 +2,8 @@
 /** @typedef {import('@typescript-eslint/parser').ParserOptions} ParserOptions */
 /** @typedef {ESLintConfig & { parserOptions: ParserOptions }} Config */
 
-module.exports = /** @type {Config} */ ({
+/** @type {Config} */
+const config = {
   root: true,
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -21,8 +22,21 @@ module.exports = /** @type {Config} */ ({
   ],
   rules: {
     eqeqeq: ['error', 'always', { null: 'ignore' }],
-    'sort-imports': ['error', { ignoreDeclarationSort: true }],
-    'import/order': ['error', { alphabetize: { order: 'asc' } }],
+    'sort-imports': ['warn', { ignoreDeclarationSort: true }],
+    'import/order': [
+      'warn',
+      {
+        alphabetize: { order: 'asc' },
+        pathGroups: [
+          {
+            pattern: '@/**',
+            group: 'parent',
+            position: 'before',
+          },
+        ],
+        'newlines-between': 'always',
+      },
+    ],
     'node/no-missing-import': 'off',
     'node/no-missing-require': 'off',
   },
@@ -43,10 +57,12 @@ module.exports = /** @type {Config} */ ({
       },
     },
     {
-      files: ['*.test.*'],
+      files: ['*.test.*', '*.spec.*'],
       rules: {
         'node/no-unpublished-import': 'off',
       },
     },
   ],
-})
+}
+
+module.exports = config
