@@ -54,6 +54,7 @@ const config = {
         '@typescript-eslint/no-unsafe-assignment': 'off',
         '@typescript-eslint/no-unsafe-member-access': 'off',
         'node/no-unpublished-require': 'off',
+        'node/no-extraneous-require': 'off',
       },
     },
     {

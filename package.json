@@ -5,6 +5,9 @@
   "engines": {
     "node": ">=14.15.0"
   },
+  "workspaces": [
+    "./packages/*"
+  ],
   "scripts": {
     "test": "run-p -l -c --aggregate-output lint:* unit",
     "unit": "jest --coverage --verbose",

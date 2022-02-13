@@ -4,5 +4,11 @@
     "composite": false,
     "noEmit": true
   },
-  "include": ["./src", "./*.js", "./.*.js"]
+  "include": [
+    "./*.js",
+    "./.*.js",
+    "./packages/*/src",
+    "./packages/*/*.js",
+    "./packages/*/.*.js"
+  ]
 }
