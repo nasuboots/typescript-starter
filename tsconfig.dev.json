@@ -9,6 +9,7 @@
     "./.*.js",
     "./*.js",
     "./*.json",
+    "./packages/*/scripts",
     "./packages/*/.*.js",
     "./packages/*/*.js",
     "./packages/*/*.json"
