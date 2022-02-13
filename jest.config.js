@@ -1,21 +1,14 @@
 /** @typedef {import('@jest/types').Config.InitialOptions} Config */
 
-const path = require('path')
-
-const { pathsToModuleNameMapper } = require('ts-jest/utils')
+const { pathsToModuleNameMapper } = require('ts-jest')
 
 const { compilerOptions } = require('./tsconfig.base.json')
 
 /** @type {Config} */
 const config = {
-  preset: 'ts-jest',
   testEnvironment: 'node',
-  roots: ['<rootDir>'],
-  modulePaths: ['<rootDir>'],
-  globals: {
-    'ts-jest': {
-      tsconfig: path.resolve(__dirname, './tsconfig.dev.json'),
-    },
+  transform: {
+    '^.+\\.(t|j)sx?$': '@swc/jest',
   },
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths) || {},
 }
