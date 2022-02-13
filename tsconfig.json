@@ -1,7 +1,12 @@
 // "Solution Style"
 {
+  "compilerOptions": {
+    "disableSourceOfProjectReferenceRedirect": true
+  },
   "files": [],
   "references": [
     { "path": "./tsconfig.dev.json" },
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.test.json" }
   ]
 }

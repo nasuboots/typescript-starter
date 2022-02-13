@@ -8,7 +8,7 @@ const config = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     tsconfigRootDir: __dirname,
-    project: ['./tsconfig.dev.json'],
+    project: ['./tsconfig.eslint.json'],
   },
   plugins: ['@typescript-eslint', 'import', 'jest', 'node'],
   extends: [

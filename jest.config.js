@@ -4,7 +4,7 @@ const path = require('path')
 
 const { pathsToModuleNameMapper } = require('ts-jest/utils')
 
-const { compilerOptions } = require('./tsconfig.dev.json')
+const { compilerOptions } = require('./tsconfig.base.json')
 
 /** @type {Config} */
 const config = {
