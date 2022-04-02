@@ -9,9 +9,9 @@
     "packages/*"
   ],
   "scripts": {
-    "test": "run-p -l -c --aggregate-output lint:* unit",
+    "test": "run-p -l -c --aggregate-output typecheck lint:* unit",
     "unit": "jest --coverage --verbose",
-    "test-ci": "run-p -l -c --aggregate-output lint:* unit-ci",
+    "test-ci": "run-p -l -c --aggregate-output typecheck lint:* unit-ci",
     "unit-ci": "jest",
     "typecheck": "tsc -b",
     "lint": "run-p -l -c --aggregate-output lint:*",
