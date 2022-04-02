@@ -4,6 +4,6 @@
     "outDir": "../../tsc-out/packages/foo",
     "types": ["jest"]
   },
-  "include": ["./src/**/*.test.ts"],
+  "include": ["./src/**/*.test.ts", "./tests"],
   "references": [{ "path": "./tsconfig.app.json" }]
 }
