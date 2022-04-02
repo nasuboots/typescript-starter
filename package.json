@@ -6,7 +6,7 @@
     "node": ">=14.15.0"
   },
   "workspaces": [
-    "./packages/*"
+    "packages/*"
   ],
   "scripts": {
     "test": "run-p -l -c --aggregate-output lint:* unit",
