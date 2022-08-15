@@ -7,8 +7,6 @@
 
     "module": "CommonJS",
     "moduleResolution": "Node",
-    "baseUrl": "./",
-    "paths": {},
     "resolveJsonModule": true,
 
     "emitDeclarationOnly": true,
