@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "start": "ts-node -P tsconfig.app.json src/index.ts",
     "build": "node scripts/build.js"
   }
 }
