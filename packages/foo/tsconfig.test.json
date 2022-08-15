@@ -1,9 +1,9 @@
 {
-  "extends": "../../tsconfig.base.json",
+  "extends": "./tsconfig.app.json",
   "compilerOptions": {
-    "outDir": "../../tsc-out/packages/foo",
     "types": ["jest"]
   },
   "include": ["./src/**/*.test.ts", "./tests"],
+  "exclude": [],
   "references": [{ "path": "./tsconfig.app.json" }]
 }

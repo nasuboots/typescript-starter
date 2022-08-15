@@ -5,7 +5,7 @@ const esbuild = require('esbuild')
 esbuild
   .build({
     entryPoints: [path.resolve(__dirname, '../src/index.ts')],
-    outdir: path.resolve(__dirname, '../../../dist/packages/foo'),
+    outdir: path.resolve(__dirname, '../dist'),
     bundle: true,
     minify: true,
     platform: 'node',
