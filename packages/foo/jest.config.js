@@ -6,7 +6,7 @@ const path = require('path')
 const json5 = require('json5')
 const { pathsToModuleNameMapper } = require('ts-jest')
 
-/** @type {import('./tsconfig.app.json')} */
+/** @type {{ compilerOptions: import('typescript').CompilerOptions}} */
 const { compilerOptions } = json5.parse(
   fs.readFileSync(path.resolve(__dirname, './tsconfig.app.json'), 'utf-8')
 )
@@ -17,7 +17,7 @@ const config = {
   transform: {
     '^.+\\.(t|j)sx?$': '@swc/jest',
   },
-  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths) || {},
+  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths || {}) || {},
 }
 
 module.exports = config

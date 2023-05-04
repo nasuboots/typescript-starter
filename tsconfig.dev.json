@@ -1,7 +1,6 @@
 {
   "extends": "@my-app/tsconfig/base.json",
   "compilerOptions": {
-    "checkJs": true,
     "outDir": "./tsc-out",
     "types": ["node"]
   },

@@ -1,7 +1,7 @@
 // "Solution Style"
 {
   "compilerOptions": {
-    "disableSourceOfProjectReferenceRedirect": true
+    // "disableSourceOfProjectReferenceRedirect": true
   },
   "files": [],
   "references": [
