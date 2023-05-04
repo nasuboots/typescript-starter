@@ -1,17 +1,9 @@
 {
-  "extends": "./tsconfig.base.json",
+  "extends": "@my-app/tsconfig/base.json",
   "compilerOptions": {
     "checkJs": true,
     "outDir": "./tsc-out",
     "types": ["node"]
   },
-  "include": [
-    "./.*.js",
-    "./*.js",
-    "./*.json",
-    "./packages/*/scripts",
-    "./packages/*/.*.js",
-    "./packages/*/*.js",
-    "./packages/*/*.json"
-  ]
+  "include": ["./.*.js", "./*.js", "./*.json"]
 }

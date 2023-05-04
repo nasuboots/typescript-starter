@@ -1,5 +1,5 @@
 {
-  "extends": "./tsconfig.base.json",
+  "extends": "@my-app/tsconfig/base.json",
   "compilerOptions": {
     "composite": false,
     "noEmit": true

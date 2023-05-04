@@ -1,15 +1,18 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
+
   "compilerOptions": {
     "composite": true,
+    "emitDeclarationOnly": true,
 
-    "target": "ES2021",
-    "lib": ["ES2021"],
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "skipLibCheck": true,
 
     "module": "CommonJS",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
-
-    "emitDeclarationOnly": true,
+    "checkJs": true,
 
     "isolatedModules": true,
     "esModuleInterop": true,
@@ -21,9 +24,7 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
-
-    "skipLibCheck": true
+    "noPropertyAccessFromIndexSignature": true
   },
   "files": []
 }

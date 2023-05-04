@@ -1,9 +1,9 @@
 {
   "extends": "./tsconfig.app.json",
   "compilerOptions": {
-    "types": ["jest"]
+    "types": ["node", "jest"]
   },
-  "include": ["./src/**/*.test.ts", "./tests"],
+  "include": ["./src/**/*.test.ts", "./tests", "./scripts"],
   "exclude": [],
   "references": [{ "path": "./tsconfig.app.json" }]
 }
