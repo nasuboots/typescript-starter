@@ -4,7 +4,11 @@
   "private": true,
   "scripts": {
     "start": "ts-node -P tsconfig.app.json src/index.ts",
-    "build": "node scripts/build.js"
+    "build": "node scripts/build.js",
+    "test": "jest --coverage --verbose",
+    "typecheck": "tsc -b",
+    "lint": "eslint .",
+    "clean": "rimraf dist coverage tsc-out"
   },
   "devDependencies": {
     "@my-app/eslint-config": "*",
