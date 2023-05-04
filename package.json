@@ -6,6 +6,7 @@
     "node": ">=18.16.0"
   },
   "workspaces": [
+    "apps/*",
     "packages/*"
   ],
   "scripts": {

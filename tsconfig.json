@@ -4,8 +4,5 @@
     // "disableSourceOfProjectReferenceRedirect": true
   },
   "files": [],
-  "references": [
-    { "path": "./tsconfig.dev.json" },
-    { "path": "./packages/foo" }
-  ]
+  "references": [{ "path": "./tsconfig.dev.json" }, { "path": "./apps/foo" }]
 }

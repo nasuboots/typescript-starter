@@ -8,5 +8,12 @@ module.exports = {
     tsconfigRootDir: __dirname,
     project: ['./tsconfig.dev.json'],
   },
-  ignorePatterns: ['node_modules', 'dist', 'tsc-out', 'coverage', '/packages/'],
+  ignorePatterns: [
+    'node_modules',
+    'dist',
+    'tsc-out',
+    'coverage',
+    '/apps/',
+    '/packages/',
+  ],
 }

@@ -2,7 +2,7 @@
 
 /** @type {Config} */
 const config = {
-  projects: ['<rootDir>/packages/*'],
+  projects: ['<rootDir>/apps/*'],
 }
 
 module.exports = config
