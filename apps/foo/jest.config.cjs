@@ -1,3 +1,5 @@
+'use strict'
+
 /** @typedef {import('@jest/types').Config.InitialOptions} Config */
 
 const fs = require('fs')
@@ -14,6 +16,7 @@ const { compilerOptions } = json5.parse(
 /** @type {Config} */
 const config = {
   testEnvironment: 'node',
+  extensionsToTreatAsEsm: ['.ts', '.tsx'],
   transform: {
     '^.+\\.(t|j)sx?$': '@swc/jest',
   },

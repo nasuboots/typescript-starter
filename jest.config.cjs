@@ -1,3 +1,5 @@
+'use strict'
+
 /** @typedef {import('@jest/types').Config.InitialOptions} Config */
 
 /** @type {Config} */

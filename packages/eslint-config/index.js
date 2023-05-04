@@ -36,16 +36,11 @@ module.exports = {
     ],
     'node/no-missing-import': 'off',
     'node/no-missing-require': 'off',
+    'node/no-unsupported-features/es-syntax': 'off',
   },
   overrides: [
     {
-      files: ['*.ts', '*.tsx'],
-      rules: {
-        'node/no-unsupported-features/es-syntax': 'off',
-      },
-    },
-    {
-      files: ['*.js'],
+      files: ['*.cjs'],
       rules: {
         '@typescript-eslint/no-var-requires': 'off',
         '@typescript-eslint/no-unsafe-assignment': 'off',

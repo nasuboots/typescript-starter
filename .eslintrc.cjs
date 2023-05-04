@@ -3,7 +3,7 @@
 /** @type {import('@my-app/eslint-config').Config} */
 module.exports = {
   root: true,
-  extends: ['@my-app'],
+  extends: ['@my-app/eslint-config'],
   parserOptions: {
     tsconfigRootDir: __dirname,
     project: ['./tsconfig.dev.json'],

@@ -2,10 +2,11 @@
   "name": "@my-app/foo",
   "version": "0.0.1",
   "private": true,
+  "type": "module",
   "scripts": {
     "start": "tsx --tsconfig tsconfig.app.json src/index.ts",
     "build": "tsx --tsconfig tsconfig.node.json scripts/build.ts",
-    "test": "jest --coverage --verbose",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --coverage --verbose",
     "typecheck": "tsc -b",
     "lint": "eslint .",
     "clean": "rimraf dist coverage tsc-out"

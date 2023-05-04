@@ -4,5 +4,5 @@
     "outDir": "./tsc-out",
     "types": ["node"]
   },
-  "include": ["./.*.js", "./*.js", "./*.json"]
+  "include": ["./.*.js", "./*.js", "./.*.cjs", "./*.cjs", "./*.json"]
 }

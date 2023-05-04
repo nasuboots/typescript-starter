@@ -9,6 +9,8 @@
     "./scripts",
     "./.*.js",
     "./*.js",
+    "./.*.cjs",
+    "./*.cjs",
     "./*.json"
   ],
   "exclude": [],
