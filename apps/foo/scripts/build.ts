@@ -1,6 +1,8 @@
-const path = require('path')
+/* eslint-disable node/no-extraneous-import */
 
-const esbuild = require('esbuild')
+import path from 'path'
+
+import esbuild from 'esbuild'
 
 esbuild
   .build({
